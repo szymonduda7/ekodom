@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EKO-DOM SANOK | Dystrybutor Pokryć Dachowych</title>
+<meta name="description" content="EKO-DOM SANOK: dystrybutor szwedzkich pokryć dachowych, dachówki ceramicznej i więźby dachowej. Montaż, doradztwo, obmiar i transport gratis. Piastowska 51, Sanok." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231C1A1A' rx='6'/%3E%3Cpath d='M6 20 L16 9 L26 20' stroke='%23EE1D23' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RoofingContractor",
+  "name": "EKO-DOM SANOK Dystrybutor Pokryć Dachowych",
+  "telephone": "+48880118640",
+  "email": "biuro@dachysanok.pl",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Piastowska 51",
+    "postalCode": "38-500",
+    "addressLocality": "Sanok",
+    "addressCountry": "PL"
+  },
+  "areaServed": "Sanok i okolice",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.2",
+    "reviewCount": "50"
+  }
+}
+</script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Przejdź do treści</a>
+
+<!-- NAV -->
+<header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b hairline">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 h-[68px] flex items-center justify-between">
+    <a href="#main" class="flex items-center">
+      <img src="images/logo.webp" alt="EKO-DOM SANOK Dachy - sprzedaż, montaż, serwis, transport" class="h-11 md:h-12 w-auto">
+    </a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="#uslugi" class="nav-link">Usługi</a>
+      <a href="#oferta" class="nav-link">Materiały</a>
+      <a href="#realizacje" class="nav-link">Realizacje</a>
+      <a href="#opinie" class="nav-link">Opinie</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <a href="tel:+48880118640" class="nav-call btn btn-primary !py-2.5 !px-4 !text-sm">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>880 118 640</span>
+    </a>
+    <button type="button" id="menuToggle" class="nav-toggle items-center justify-center w-10 h-10 rounded-lg border hairline" aria-expanded="false" aria-controls="mobileMenu" aria-label="Otwórz menu">
+      <svg id="iconMenuOpen" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg id="iconMenuClose" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div id="menuBackdrop" class="menu-backdrop" style="position:fixed; inset:0; top:68px; z-index:30; background:rgba(21,24,27,.4);"></div>
+<div id="mobileMenu" class="mobile-menu" style="position:fixed; top:68px; left:0; right:0; z-index:35; background:#fff; border-bottom:1px solid var(--line); box-shadow:0 20px 34px -22px rgba(21,24,27,.3);">
+  <nav class="max-w-6xl mx-auto px-5">
+    <a href="#uslugi" class="mobile-nav-link">Usługi</a>
+    <a href="#oferta" class="mobile-nav-link">Materiały</a>
+    <a href="#realizacje" class="mobile-nav-link">Realizacje</a>
+    <a href="#opinie" class="mobile-nav-link">Opinie</a>
+    <a href="#kontakt" class="mobile-nav-link">Kontakt</a>
+  </nav>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 pt-16 pb-16 md:pt-24 md:pb-20">
+      <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-center">
+        <div>
+          <p class="eyebrow mb-5">Dystrybutor pokryć dachowych · Sanok</p>
+          <h1 class="font-display text-[2.5rem] sm:text-[3.25rem] lg:text-[3.75rem]" style="color:var(--ink)">
+            Szwedzkie pokrycia dachowe, dobrane na bieszczadzkie zimy.
+          </h1>
+          <p class="mt-7 text-lg leading-[1.7] max-w-xl" style="color:var(--ink-soft)">
+            Sprzedaż i montaż szwedzkich pokryć dachowych, dachówki ceramicznej oraz więźby dachowej.
+            Doradzamy w doborze materiału, mierzymy dach i dowozimy zamówienie bez dodatkowych kosztów.
+          </p>
+          <div class="mt-9 flex flex-wrap items-center gap-4">
+            <a href="tel:+48880118640" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Zadzwoń: 880 118 640
+            </a>
+            <a href="#uslugi" class="btn btn-ghost">Zobacz ofertę</a>
+          </div>
+
+          <div class="mt-12 flex items-center gap-3">
+            <div class="flex items-center gap-1" aria-hidden="true">
+              <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+              <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+              <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+              <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" style="color:var(--gold)"><defs><linearGradient id="starHalf"><stop offset="42%" stop-color="currentColor"/><stop offset="42%" stop-color="transparent"/></linearGradient></defs><path fill="url(#starHalf)" stroke="currentColor" stroke-width="1" d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            </div>
+            <p class="text-sm font-medium" style="color:var(--ink-soft)"><span class="font-display text-base" style="color:var(--ink)">4,2</span> · 50 opinii w Google</p>
+          </div>
+        </div>
+
+        <div class="relative mt-2 lg:mt-0">
+          <div class="rounded-2xl overflow-hidden" style="aspect-ratio:4/5; box-shadow:0 1px 2px rgba(21,24,27,.08), 0 32px 54px -26px rgba(21,24,27,.4);">
+            <img src="images/6.webp" alt="Ukończone pokrycie dachu blachodachówką w kolorze grafitowym, realizacja EKO-DOM SANOK" class="w-full h-full" style="object-fit:cover;">
+          </div>
+          <div class="absolute -bottom-6 -left-6 hidden sm:block bg-white rounded-xl px-4 py-3.5" style="box-shadow:0 1px 2px rgba(21,24,27,.08), 0 20px 32px -18px rgba(21,24,27,.3); border:1px solid var(--line);">
+            <p class="eyebrow mb-2">Kolory pokryć</p>
+            <div class="swatch-strip">
+              <div class="swatch" style="background:#4B4E4C" title="Grafit"></div>
+              <div class="swatch" style="background:#7C3E2B" title="Ceglasty"></div>
+              <div class="swatch" style="background:#3E4A3A" title="Zieleń"></div>
+              <div class="swatch" style="background:#5C2E24" title="Brąz"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP STRIP -->
+  <section style="background:var(--cloud); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 py-3 grid sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 divide-[var(--line)]">
+      <div class="usp-item">
+        <span class="usp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.4 2.4 0 0 1 0-3.4l2.6-2.6a2.4 2.4 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg></span>
+        <div>
+          <p class="font-semibold text-sm" style="color:var(--ink)">Obmiar dachu gratis</p>
+          <p class="text-xs" style="color:var(--ink-soft)">Dokładne wyliczenie materiału</p>
+        </div>
+      </div>
+      <div class="usp-item">
+        <span class="usp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></span>
+        <div>
+          <p class="font-semibold text-sm" style="color:var(--ink)">Transport gratis</p>
+          <p class="text-xs" style="color:var(--ink-soft)">Dowóz zamówienia na budowę</p>
+        </div>
+      </div>
+      <div class="usp-item">
+        <span class="usp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+        <div>
+          <p class="font-semibold text-sm" style="color:var(--ink)">Materiały szwedzkie</p>
+          <p class="text-xs" style="color:var(--ink-soft)">Sprawdzone w trudnym klimacie</p>
+        </div>
+      </div>
+      <div class="usp-item">
+        <span class="usp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>
+        <div>
+          <p class="font-semibold text-sm" style="color:var(--ink)">Osobiste doradztwo</p>
+          <p class="text-xs" style="color:var(--ink-soft)">Dobór pokrycia do budynku</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="uslugi" class="py-20 md:py-28 scroll-mt-16">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <div class="max-w-2xl">
+        <p class="eyebrow mb-4">Zakres oferty</p>
+        <h2 class="font-display text-4xl md:text-5xl" style="color:var(--ink)">Od doboru materiału po gotowy dach.</h2>
+        <p class="mt-6 text-base leading-[1.7]" style="color:var(--ink-soft)">
+          Sprzedajemy i montujemy pełen zestaw pokrycia dachowego: od dachówki i blachodachówki, przez więźbę,
+          po rynny i obróbki blacharskie. Obsługujemy zamówienie od pierwszej konsultacji po odbiór dachu.
+        </p>
+      </div>
+
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <a href="uslugi/blachodachowka.html" class="card p-7 block">
+          <div class="icon-ring mb-5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>
+          </div>
+          <p class="eyebrow mb-1">Pokrycia stalowe</p>
+          <h3 class="font-display text-2xl mb-2" style="color:var(--ink)">Blachodachówka</h3>
+          <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">Modele Gerard, Ruukki i Bratex w szerokiej palecie kolorów, dobrane na surowy bieszczadzki klimat.</p>
+          <span class="card-link-arrow">Dowiedz się więcej <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a href="uslugi/dachowka-ceramiczna.html" class="card p-7 block">
+          <div class="icon-ring mb-5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <p class="eyebrow mb-1">Pokrycie klasyczne</p>
+          <h3 class="font-display text-2xl mb-2" style="color:var(--ink)">Dachówka ceramiczna</h3>
+          <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">Naturalna dachówka o wieloletniej trwałości, w kolorach i profilach dobranych do bryły domu.</p>
+          <span class="card-link-arrow">Dowiedz się więcej <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a href="uslugi/wiezba-dachowa.html" class="card p-7 block">
+          <div class="icon-ring mb-5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 4 20"/><path d="M12 4 20 20"/><path d="M8.5 14h7"/></svg>
+          </div>
+          <p class="eyebrow mb-1">Konstrukcja</p>
+          <h3 class="font-display text-2xl mb-2" style="color:var(--ink)">Więźba dachowa</h3>
+          <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">Drewniana konstrukcja dachu wykonana i dostarczona pod wybrane przez Ciebie pokrycie.</p>
+          <span class="card-link-arrow">Dowiedz się więcej <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a href="uslugi/montaz-dachow.html" class="card p-7 block">
+          <div class="icon-ring mb-5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 12-8.5 8.5a2.12 2.12 0 1 1-3-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.41-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"/></svg>
+          </div>
+          <p class="eyebrow mb-1">Wykonawstwo</p>
+          <h3 class="font-display text-2xl mb-2" style="color:var(--ink)">Montaż dachów</h3>
+          <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">Sprawdzone ekipy montażowe kładą zakupione u nas pokrycie zgodnie ze sztuką dekarską.</p>
+          <span class="card-link-arrow">Dowiedz się więcej <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a href="uslugi/rynny-i-obrobki.html" class="card p-7 block">
+          <div class="icon-ring mb-5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+          </div>
+          <p class="eyebrow mb-1">Wykończenie</p>
+          <h3 class="font-display text-2xl mb-2" style="color:var(--ink)">Rynny i obróbki blacharskie</h3>
+          <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">Systemy rynnowe oraz obróbki kominów i okien połaciowych dopełniające szczelność dachu.</p>
+          <span class="card-link-arrow">Dowiedz się więcej <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a href="uslugi/doradztwo-i-wycena.html" class="card p-7 block">
+          <div class="icon-ring mb-5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+          </div>
+          <p class="eyebrow mb-1">Pierwszy krok</p>
+          <h3 class="font-display text-2xl mb-2" style="color:var(--ink)">Doradztwo, obmiar i transport</h3>
+          <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">Bezpłatna konsultacja, dokładny obmiar połaci i dowóz zamówienia bez dodatkowych kosztów.</p>
+          <span class="card-link-arrow">Dowiedz się więcej <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA / MARKI -->
+  <section id="oferta" class="py-20 md:py-28 scroll-mt-16" style="background:var(--cloud)">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <div class="max-w-2xl mb-14">
+        <p class="eyebrow mb-4">Marki w naszej ofercie</p>
+        <h2 class="font-display text-4xl md:text-5xl" style="color:var(--ink)">Sprawdzone marki pokryć dachowych.</h2>
+        <p class="mt-6 text-base leading-[1.7]" style="color:var(--ink-soft)">
+          W punkcie przy Piastowskiej 51 obejrzysz próbki dachówki, blachodachówki i akcesoriów dekarskich,
+          zanim zdecydujesz się na zamówienie.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="brand-card">
+          <div class="relative" style="aspect-ratio:4/3;">
+            <img src="images/10.webp" alt="Dom w górach kryty dachówką stalową Gerard" class="w-full h-full" style="object-fit:cover;" loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-xl mb-1" style="color:var(--ink)">Gerard</h3>
+            <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">Stalowe dachówki modułowe w wielu kolorach i profilach.</p>
+          </div>
+        </div>
+        <div class="brand-card">
+          <div class="relative" style="aspect-ratio:4/3;">
+            <img src="images/14.webp" alt="Blacha na rąbek stojący Ruukki Classic Pro" class="w-full h-full" style="object-fit:cover;" loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-xl mb-1" style="color:var(--ink)">Ruukki</h3>
+            <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">Blacha na rąbek stojący i pokrycia płaskie klasy premium.</p>
+          </div>
+        </div>
+        <div class="brand-card">
+          <div class="relative" style="aspect-ratio:4/3;">
+            <img src="images/21.webp" alt="Dach kryty blachodachówką Bratex w kolorze grafitowym" class="w-full h-full" style="object-fit:cover;" loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-xl mb-1" style="color:var(--ink)">Bratex</h3>
+            <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">Blachodachówka profilowana w atrakcyjnych cenach.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REALIZACJE -->
+  <section id="realizacje" class="py-20 md:py-28 scroll-mt-16">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <div class="max-w-2xl mb-14">
+        <p class="eyebrow mb-4">Realizacje</p>
+        <h2 class="font-display text-4xl md:text-5xl" style="color:var(--ink)">Dostawy i montaże z ostatnich miesięcy.</h2>
+        <p class="mt-6 text-base leading-[1.7]" style="color:var(--ink-soft)">
+          Od rozładunku materiału na budowie po ostatnią obróbkę blacharską: tak wygląda nasza codzienna praca.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <button type="button" class="gallery-item lg:col-span-2" data-index="0"><img src="images/6.webp" alt="Ukończone pokrycie dachu blachodachówką w kolorze grafitowym z obróbką komina" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-index="1"><img src="images/1.webp" alt="Rozładunek pokrycia dachowego z dźwigu przy realizacji domu w górach" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-index="2"><img src="images/2.webp" alt="Samochód dostawczy EKO-DOM SANOK załadowany materiałami przy naszym punkcie w Sanoku" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-index="3"><img src="images/15.webp" alt="Dom w trakcie krycia dachu blachą na rąbek stojący, montaż w toku" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-index="4"><img src="images/4.webp" alt="Dom w budowie z łaceniem pod pokrycie dachowe i dostawą materiału na plac budowy" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-index="5"><img src="images/16.webp" alt="Więźba dachowa gotowa pod pokrycie, materiały dostarczone na budowę" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-index="6"><img src="images/17.webp" alt="Transport materiałów budowlanych na plac budowy" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-index="7"><img src="images/20.webp" alt="Obróbka blacharska parapetu okiennego w kolorze grafitowym" loading="lazy"></button>
+        <button type="button" class="gallery-item lg:col-span-2" data-index="8"><img src="images/13.webp" alt="Ośnieżony dach z oknami połaciowymi w zimowych warunkach" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-index="9"><img src="images/7.webp" alt="Arkusze blachodachówki w kolorze grafitowym przygotowane do transportu" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="slate-panel py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <p class="eyebrow mb-4" style="color:var(--red-light)">Dlaczego EKO-DOM SANOK</p>
+      <h2 class="font-display text-4xl md:text-5xl text-white max-w-2xl">Materiały, dowóz i doradztwo w jednym miejscu.</h2>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-10 md:gap-8">
+        <div>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF6B70" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <p class="eyebrow mb-2">Marki</p>
+          <h3 class="font-display text-2xl text-white mb-2">Sprawdzeni producenci</h3>
+          <p class="text-sm leading-[1.7] text-white/65">Gerard, Ruukki, Bratex i inne pokrycia sprawdzone w wymagającym, śnieżnym klimacie.</p>
+        </div>
+        <div>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF6B70" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+          <p class="eyebrow mb-2">Obsługa</p>
+          <h3 class="font-display text-2xl text-white mb-2">Osobiste doradztwo</h3>
+          <p class="text-sm leading-[1.7] text-white/65">Pomagamy dobrać pokrycie do bryły domu, budżetu i warunków na Twojej działce.</p>
+        </div>
+        <div>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF6B70" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>
+          <p class="eyebrow mb-2">Logistyka</p>
+          <h3 class="font-display text-2xl text-white mb-2">Transport gratis</h3>
+          <p class="text-sm leading-[1.7] text-white/65">Zamówiony materiał dowozimy na budowę w ustalonym terminie, bez dopłat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="opinie" class="py-20 md:py-28 scroll-mt-16">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+        <div>
+          <p class="eyebrow mb-4">Opinie klientów</p>
+          <h2 class="font-display text-4xl md:text-5xl" style="color:var(--ink)">Zdaniem osób, które u nas kupowały.</h2>
+        </div>
+        <div class="flex items-center gap-3 pb-1">
+          <div class="flex items-center gap-1" aria-hidden="true">
+            <svg class="star" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" style="color:var(--gold)"><defs><linearGradient id="starHalf2"><stop offset="42%" stop-color="currentColor"/><stop offset="42%" stop-color="transparent"/></linearGradient></defs><path fill="url(#starHalf2)" stroke="currentColor" stroke-width="1" d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+          </div>
+          <span class="text-sm font-medium" style="color:var(--ink-soft)">4,2 na Google · 50 opinii</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="avatar" style="background:var(--red)">J</div>
+            <div>
+              <p class="font-semibold text-sm" style="color:var(--ink)">Jacky K.</p>
+              <p class="text-xs" style="color:var(--ink-soft)">2 dni temu</p>
+            </div>
+          </div>
+          <div class="flex gap-0.5 mb-3" aria-hidden="true">
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+          </div>
+          <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">„Miła obsługa, wysoka jakość produktów i terminowa dostawa. Wszystko przebiegło sprawnie. Polecam!”</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="avatar" style="background:var(--steel)">S</div>
+            <div>
+              <p class="font-semibold text-sm" style="color:var(--ink)">Sebastian Królicki</p>
+              <p class="text-xs" style="color:var(--ink-soft)">tydzień temu</p>
+            </div>
+          </div>
+          <div class="flex gap-0.5 mb-3" aria-hidden="true">
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+          </div>
+          <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">„Profesjonalna obsługa, bardzo duży wybór. Jak potrzebujecie kompletnego pokrycia dachowego, to tylko tam.”</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="avatar" style="background:var(--gold)">Ł</div>
+            <div>
+              <p class="font-semibold text-sm" style="color:var(--ink)">Łukasz Łagożny</p>
+              <p class="text-xs" style="color:var(--ink-soft)">miesiąc temu</p>
+            </div>
+          </div>
+          <div class="flex gap-0.5 mb-3" aria-hidden="true">
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+          </div>
+          <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">„Bardzo dobre materiały, super doradztwo i do tego przystępne ceny. Polecam.”</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="avatar" style="background:var(--red)">B</div>
+            <div>
+              <p class="font-semibold text-sm" style="color:var(--ink)">Beata Hajnus</p>
+              <p class="text-xs" style="color:var(--ink-soft)">8 miesięcy temu</p>
+            </div>
+          </div>
+          <div class="flex gap-0.5 mb-3" aria-hidden="true">
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+          </div>
+          <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">„Pan Przemek doradził profesjonalnie i po realizacji dach wygląda świetnie. Polecam najwyższą jakość i szybką realizację.”</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="avatar" style="background:var(--steel)">M</div>
+            <div>
+              <p class="font-semibold text-sm" style="color:var(--ink)">Mariusz Muszyński</p>
+              <p class="text-xs" style="color:var(--ink-soft)">rok temu</p>
+            </div>
+          </div>
+          <div class="flex gap-0.5 mb-3" aria-hidden="true">
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+          </div>
+          <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">„Świetny kontakt, profesjonalna i konkretna obsługa, od wyliczeń i wyceny po realizację zamówienia. Polecam.”</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="avatar" style="background:var(--gold)">M</div>
+            <div>
+              <p class="font-semibold text-sm" style="color:var(--ink)">Magdalena Nowak</p>
+              <p class="text-xs" style="color:var(--ink-soft)">2 lata temu</p>
+            </div>
+          </div>
+          <div class="flex gap-0.5 mb-3" aria-hidden="true">
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+            <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.6 1.7 7-6.3-4-6.3 4 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
+          </div>
+          <p class="text-sm leading-[1.7]" style="color:var(--ink-soft)">„Zaczynając od wstępnej wyceny po samą finalizację zamówienia, wszystko na najwyższym poziomie. Bardzo polecam.”</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="py-16 md:py-20" style="background:var(--red)">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
+      <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0" aria-hidden="true">
+        <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/>
+        <circle cx="12" cy="9" r="2.5"/>
+      </svg>
+      <div>
+        <p class="eyebrow mb-2" style="color:rgba(255,255,255,.8)">Obszar działania</p>
+        <h2 class="font-display text-3xl md:text-4xl text-white mb-2">Sanok, Bieszczady i Podkarpacie.</h2>
+        <p class="text-white/85 leading-[1.7] max-w-2xl">Dowozimy materiały i doradzamy klientom z Sanoka i okolicznych gmin. Zadzwoń, żeby ustalić dostępność dowozu w Twojej miejscowości.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section id="kontakt" class="slate-panel py-20 md:py-28 scroll-mt-16">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-10">
+        <div>
+          <p class="eyebrow mb-4" style="color:var(--red-light)">Zamów bezpłatny obmiar</p>
+          <h2 class="font-display text-4xl md:text-5xl text-white mb-6">Porozmawiajmy o Twoim dachu.</h2>
+          <p class="text-white/65 leading-[1.7] max-w-md mb-8">Zadzwoń lub napisz, a dobierzemy pokrycie do Twojego budynku, wyliczymy materiał i ustalimy termin dostawy.</p>
+          <a href="tel:+48880118640" class="font-display text-4xl sm:text-5xl block mb-2" style="color:var(--red-light); letter-spacing:-0.01em;">880 118 640</a>
+          <a href="tel:+48880118640" class="btn btn-on-dark mt-4">Zadzwoń teraz</a>
+
+          <div class="mt-12 rounded-xl overflow-hidden hairline" style="border:1px solid rgba(255,255,255,.15); aspect-ratio:16/10;">
+            <iframe
+              src="https://www.google.com/maps?q=Piastowska+51,+38-500+Sanok&output=embed"
+              class="w-full h-full" style="border:0; filter:grayscale(0.3) contrast(1.05);"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa dojazdu do EKO-DOM SANOK, Piastowska 51"></iframe>
+          </div>
+        </div>
+
+        <div class="border-t lg:border-t-0 lg:border-l border-white/15 pt-10 lg:pt-0 lg:pl-10 flex flex-col gap-7">
+          <div class="flex gap-4">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6B70" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <div>
+              <p class="eyebrow mb-1">Adres</p>
+              <p class="text-white/85">Piastowska 51, 38-500 Sanok</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6B70" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <p class="eyebrow mb-1">Telefon</p>
+              <a href="tel:+48880118640" class="text-white/85 hover:text-white transition-colors block">880 118 640</a>
+              <a href="tel:+48533130137" class="text-white/85 hover:text-white transition-colors block">533 130 137</a>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6B70" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <div>
+              <p class="eyebrow mb-1">E-mail</p>
+              <a href="mailto:biuro@dachysanok.pl" class="text-white/85 hover:text-white transition-colors">biuro@dachysanok.pl</a>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6B70" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+            <div class="w-full">
+              <p class="eyebrow mb-2">Godziny otwarcia</p>
+              <div class="mt-1">
+                <div class="hours-row text-white/85"><span>Poniedziałek</span><span>07:00–17:00</span></div>
+                <div class="hours-row text-white/85"><span>Wtorek</span><span>07:00–17:00</span></div>
+                <div class="hours-row text-white/85"><span>Środa</span><span>07:00–17:00</span></div>
+                <div class="hours-row text-white/85"><span>Czwartek</span><span>07:00–17:00</span></div>
+                <div class="hours-row text-white/85"><span>Piątek</span><span>07:00–17:00</span></div>
+                <div class="hours-row text-white/85"><span>Sobota</span><span>07:00–13:00</span></div>
+                <div class="hours-row text-white/60"><span>Niedziela</span><span>Zamknięte</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="py-8 border-t hairline">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+    <img src="images/logo.webp" alt="EKO-DOM SANOK Dachy" class="h-9 w-auto">
+    <p class="text-xs" style="color:var(--ink-soft)">&copy; 2026 EKO-DOM SANOK · Piastowska 51, 38-500 Sanok · 880 118 640</p>
+  </div>
+</footer>
+
+<!-- Mobile sticky call bar -->
+<div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-white border-t hairline px-4 py-3">
+  <a href="tel:+48880118640" class="btn btn-primary w-full justify-center">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Zadzwoń: 880 118 640
+  </a>
+</div>
+<div class="h-20 md:hidden" aria-hidden="true"></div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia realizacji">
+  <button type="button" class="lightbox-btn lightbox-close" id="lightboxClose" aria-label="Zamknij podgląd">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+  </button>
+  <button type="button" class="lightbox-btn lightbox-prev" id="lightboxPrev" aria-label="Poprzednie zdjęcie">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <img id="lightboxImg" class="lightbox-img" src="" alt="">
+  <button type="button" class="lightbox-btn lightbox-next" id="lightboxNext" aria-label="Następne zdjęcie">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+  <p class="lightbox-counter" id="lightboxCounter"></p>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
